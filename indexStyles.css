@@ -36,6 +36,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.container-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
 
 img {
   width: 700px;
@@ -45,7 +52,11 @@ img {
 .hero {
   background: white;
   padding: 20px;
+  display: flex;              /* 👈 THIS is the key */
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 .about {
   background: rgb(232, 232, 232);
