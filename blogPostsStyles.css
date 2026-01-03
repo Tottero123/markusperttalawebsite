@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-family: 'FONT', sans-serif;
+ 
+}
+@font-face {
+  font-family: 'FONT';
+  src: url('font/ttf/konkhmer-sleokchher-khmer-400-normal.ttf');
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  
+  padding: 20px 0;
+  margin-top: 60px;
+}
+.footer {
+  background: rgb(211, 211, 211);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 15px;
+  transition: ease-in-out 0.3s;
+
+}
+
+a:hover {
+  color: gray;
+}
+.big{
+    text-align: center;
+    margin-top: 4%;
+    font-size: 500%;
+
+}
+
+.top{
+    background: white;
+  padding: 20px;
+  display: flex;              /* 👈 THIS is the key */
+  justify-content: space-between;
+  align-items: center;
+}
+.start{
+    margin-left: 2%;
+}
+.post{
+    margin-top: 5%;
+    margin-left: 2%;
+    background-color: rgb(251, 251, 251);
+}
