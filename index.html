@@ -10,6 +10,7 @@
   <div class="flex-container">
     <a href="https://tottero123.github.io/tottero123Plants/">My Plants</a>
     <a href="index.html">Home</a>
+    <a href="blogPosts.html">Blog</a>
    
   </div>
 
@@ -23,6 +24,23 @@
       </div>
       
     </div>
+    <div class="container-right">
+      <div>
+        <h1 class="Title">Huu am i:</h1>
+       
+        <h1>Markus Perttala</h1>
+        <h1>Coder and maker</h1>
+        <h1>Proud owner of a mini homelab (:</h1>
+        <h1>Raspberry Pi enthusiast</h1>
+        <h1>Tinkerer from Finland 🇫🇮</h1>
+      </div>
+      
+    </div>
+    <div class="container-right">
+      
+      
+    </div>
+    
   </section>
 
   
@@ -42,7 +60,7 @@
     <div class="card" data-img="images/design.png">🎨 Basic graphic design (Figma, Canva)</div>
     <div class="card" data-img="images/editing.png">✂️ Video editing (DaVinci Resolve)</div>
     <div class="card" data-img="images/3dmodel.png">🖨️ 3D printing and CAD design</div>
-    <div class="card" data-img="images/electronics.jpg">🔧 Electronics and soldering</div>
+    <div class="card" data-img="images/electronics.png">🔧 Electronics and soldering</div>
   </div>
 
   <!-- Image that changes when a card is clicked -->
@@ -58,8 +76,9 @@
   <div class="lang">🌐 HTML & CSS</div>
   <div class="lang">➕ C++</div>
   <div class="lang">🅲 C</div>
-  <div class="lang">🍏 Swift</div>
   <div class="lang">🔌 Arduino C++</div>
+  <div class="lang">🔌 Micropython (pico)</div>
+  <div class="lang">🦀 Learning Rust!!</div>
 </div>
 
   <h1>Info</h1>
@@ -77,6 +96,7 @@
 
 <div class="footer">
   <h2>Markus Perttala</h2>
+  <p id="last-updated">Site last updated: loading...</p>
 
 </div>
 <script>
@@ -94,6 +114,17 @@ document.querySelectorAll('.card').forEach(card => {
     }, 200);
   });
 });
+fetch("https://api.github.com/repos/tottero123/markusperttalawebsite/commits?per_page=1")
+  .then(res => res.json())
+  .then(data => {
+    const date = new Date(data[0].commit.committer.date);
+    document.getElementById("last-updated").textContent =
+      "Site last updated: " + date.toLocaleDateString();
+  })
+  .catch(() => {
+    document.getElementById("last-updated").textContent =
+      "Site last updated: unknown";
+  });
 </script>
 
 
