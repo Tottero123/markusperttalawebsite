@@ -53,8 +53,20 @@ a:hover {
 .start{
     margin-left: 2%;
 }
+
 .post{
     margin-top: 5%;
     margin-left: 2%;
     background-color: rgb(251, 251, 251);
 }
+.date{
+    color: rgb(69, 69, 69);
+}
+.postImg{
+    width: 50%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.postText{
+    color: rgb(59, 59, 59);
+}
+
