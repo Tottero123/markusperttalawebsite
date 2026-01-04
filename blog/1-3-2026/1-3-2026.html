@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tottero123</title>
+  <link rel="stylesheet" href="/blog/postStyles.css">
+</head>
+<body>
+  <div class="flex-container">
+    <a href="https://tottero123.github.io/tottero123Plants/">My Plants</a>
+    <a href="/index.html">Home</a>
+    <a href="/blogPosts.html">Blog</a>
+   
+  </div>
+
+  
+
+  <div class="post">
+    <h1>I am learning Rust!</h1>
+    <p class="date">January 3, 2026 - Helsinki, Finland</p>
+    
+    <img src="1.png" alt="">
+    <h2>Learning a new language</h2>
+    <h3>I have thought about learning a new language for a while now. I have done Unity for 4 years now, and that´s nice but i needed something new. </h2>
+    <h3>I have tried doing Python aps whit Pygame, but coming from Unitys UI it is such a boring task (: </h3>
+   
+    <h3>Then i thought about the languagues i alredy knew: C, C++, C#, Python, Micropython... and i immediatly realised something big:</h3>
+    <h3>ChatGPT can help!</h3>
+    <h3>At the time i didn't ask what language to learn, since i just wanted a coding project idea. Whit the ideas it got me, the most intresting one being a weather app, that was the time i thought to learn a new language.</h3>
+    <h3>I asked for new ones and Rust popped out for me. I had heard about in a finish magazine and also on the internet of course.</h3>
+    <img src="2.png" alt="">
+    <h2>Starting the proccess</h2>
+    <h3>Then i went to Youtube and watched a great video from Fireship. It helped a lot in understing it. I will link it and everything at the bottom of the post.</h3>
+    <img src="3.png" alt="">
+    <h3>While i am not so interested in making low level programs yet, i thought it would be fun to learn a new language (haven't done that really since 2024 i guess 😮) and a GREAT way to start 2026!</h3>
+    <h3>All that was left was a great course. I have always been a fan of long 3 - 5 hour courses on Youtube since they are free and teach you all the basics. I like learning by doing and that´s my plan after the course.</h3>
+    <h3>The course i went whit was about the first that comes on Youtube after searching "Rust course" 😅 It is from BekBrace on Youtube and really nice!</h3>
+    <img src="4.png" alt="">
+    <h3>I have been learning Rust for 2 days now so i can´t say anything reasonable now. I can only say that i am exited to learn it for the next ≈30 days!</h3>
+    <h2>Links:</h2>
+    <a href="https://www.youtube.com/watch?v=5C_HPTJg5ek">Fireships video</a>
+    <a href="https://www.youtube.com/watch?v=rQ_J9WH6CGk&t=2781s">The course i have been following</a>
+    <a href="https://rust-lang.org">Rust site</a>
+    <a href="https://rust-lang.org/tools/install/">Install Rust</a>
+    <a href="https://medium.com/codex/rust-101-everything-you-need-to-know-about-rust-f3dd0ae99f4c">Nice article (i read just a bit)</a>
+    <a href="https://doc.rust-lang.org/book/">The Rust book for helping you</a>
+    
+  </div>
+  
+  
+  
+<div class="footer">
+  <h2>Markus Perttala</h2>
+  <p id="last-updated">Site last updated: loading...</p>
+</div>
+<script>
+
+
+fetch("https://api.github.com/repos/tottero123/markusperttalawebsite/commits?per_page=1")
+  .then(res => res.json())
+  .then(data => {
+    const date = new Date(data[0].commit.committer.date);
+    document.getElementById("last-updated").textContent =
+      "Site last updated: " + date.toLocaleDateString();
+  })
+  .catch(() => {
+    document.getElementById("last-updated").textContent =
+      "Site last updated: unknown";
+  });
+</script>
+
+
+
+</body>
+</html>
